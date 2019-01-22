@@ -8,4 +8,12 @@ pprint(responce)
 
 
 #linux_puran -1001169337107
-bot.sendMessage(499134543, 'Hey! bro ')
+
+
+
+
+#https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=API_KEY  techcrunch_API
+
+data=request.get("https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=e353c11878134fc28d81faf7eff3b941")
+print(data)
+bot.sendMessage(499134543, data)

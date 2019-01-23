@@ -38,7 +38,7 @@ for x in range(9):
     source = resp['articles'][x]['source']['name']
     output=  "***"+source +"***\n"+description+"\n"+url
     bot.sendMessage(499134543, output ,parse_mode= 'Markdown')
-    time.sleep(10)
+    time.sleep(100)
 
 
 #print(resp['articles'][0]['title'])

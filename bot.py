@@ -4,10 +4,13 @@ from telepot .loop import MessageLoop
 import requests
 from requests import *
 
+
+from hn import HN #hacker news 
+
 bot=telepot.Bot("538862630:AAF8LlV3qBSOKLDgbx-I1ZdTZvdtEdtQcVU")
 pprint(bot.getMe())
-responce1=bot.getUpdates()
-pprint(responce1)
+#responce1=bot.getUpdates()
+#pprint(responce1)
 
 
 #linux_puran -1001169337107
@@ -17,9 +20,9 @@ pprint(responce1)
 
 #https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=API_KEY  techcrunch_API
 
-#url='https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=e353c11878134fc28d81faf7eff3b941'
+url='https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=e353c11878134fc28d81faf7eff3b941'
 
-#resp = requests.get(url)
+resp = requests.get(url).json()
 #if resp.status_code != 200:
     # This means something went wrong.
     #print('hello')
@@ -27,8 +30,8 @@ pprint(responce1)
 
 #response = requests.get(url)
 
+print(resp)
 
 
 
-
-bot.sendMessage(499134543, resp)
+#bot.sendMessage(499134543, )

@@ -3,7 +3,8 @@ from pprint import pprint
 from telepot .loop import MessageLoop
 import requests
 from requests import *
-
+import json
+import time 
 
 from hn import HN #hacker news 
 
@@ -30,8 +31,20 @@ resp = requests.get(url).json()
 
 #response = requests.get(url)
 
-print(resp)
+for x in range(9):
+    title=resp['articles'][x]['title']
+    description=resp['articles'][x]['title']
+    url=resp['articles'][x]['url']
+    source = resp['articles'][x]['source']['name']
+    output=  "***"+source +"***\n"+description+"\n"+url
+    bot.sendMessage(499134543, output ,parse_mode= 'Markdown')
+    time.sleep(10)
+
+
+#print(resp['articles'][0]['title'])
+
+#print(resp)
 
 
 
-#bot.sendMessage(499134543, )
+#bot.sendMessage(499134543, output ,parse_mode= 'Markdown')

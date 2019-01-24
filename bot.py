@@ -37,8 +37,8 @@ for x in range(9):
     url=resp['articles'][x]['url']
     source = resp['articles'][x]['source']['name']
     output=  "***"+source +"***\n"+description+"\n"+url
-    bot.sendMessage(499134543, output ,parse_mode= 'Markdown')
-    time.sleep(100)
+    #bot.sendMessage(499134543, output ,parse_mode= 'Markdown')
+    #time.sleep(100)
 
 
 #print(resp['articles'][0]['title'])
@@ -47,4 +47,4 @@ for x in range(9):
 
 
 
-#bot.sendMessage(499134543, output ,parse_mode= 'Markdown')
+bot.sendMessage(-1001169337107, 'https://www.diveinto.org/python3/' ,parse_mode= 'Markdown')

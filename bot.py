@@ -47,4 +47,4 @@ for x in range(9):
 
 
 
-bot.sendMessage(-1001169337107, 'https://www.diveinto.org/python3/' ,parse_mode= 'Markdown')
+bot.sendMessage(-1001169337107, 'https://opensource.com/article/19/1/productivity-tool-tint2' ,parse_mode= 'Markdown')

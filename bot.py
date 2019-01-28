@@ -47,4 +47,4 @@ for x in range(9):
 
 
 
-bot.sendMessage(-1001169337107, 'https://www.2daygeek.com/how-to-understand-and-identify-file-types-in-linux/' ,parse_mode= 'Markdown')
+bot.sendMessage(, 'https://www.2daygeek.com/how-to-understand-and-identify-file-types-in-linux/' ,parse_mode= 'Markdown')

@@ -44,7 +44,7 @@ for x in range(9):
 #print(resp['articles'][0]['title'])
 
 #print(resp)
+v='https://github.com/STEllAR-GROUP/hpx/wiki/GSoC-2019-Project-Ideas'
 
 
-
-bot.sendMessage(, 'https://www.2daygeek.com/how-to-understand-and-identify-file-types-in-linux/' ,parse_mode= 'Markdown')
+bot.sendMessage(-1001169337107, v )
